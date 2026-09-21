@@ -2,14 +2,15 @@ using System.Security.Cryptography.X509Certificates;
 using Tyuiu.SologubNV.Sprint1.Task0.V20.Lib;
 namespace Tyuiu.SologubNV.Sprint1.Task0.V20.Test
 {
-    public class DataServiceTest
+    [TestClass]
+    public sealed class DataServiceTest
     {
-        [Fact]
+        [TestMethod]
         public void ValidCalculated()
         {
             DataService ds = new DataService();
             var result = ds.Calculate();
-            Assert.Equal(13 , result);
+            Assert.AreEqual(13 , result);
         }
     }
 }
