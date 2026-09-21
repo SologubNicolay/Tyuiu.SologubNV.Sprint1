@@ -1,4 +1,4 @@
-using System.Security.Cryptography.X509Certificates;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tyuiu.SologubNV.Sprint1.Task0.V20.Lib;
 namespace Tyuiu.SologubNV.Sprint1.Task0.V20.Test
 {
@@ -6,11 +6,11 @@ namespace Tyuiu.SologubNV.Sprint1.Task0.V20.Test
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void ValidCalculated()
+        public void ValidExpression()
         {
             DataService ds = new DataService();
-            var result = ds.Calculate();
-            Assert.AreEqual(13 , result);
+            var res = ds.Calculate();
+            Assert.AreEqual(13 , res);
         }
     }
 }
